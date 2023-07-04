@@ -28,9 +28,9 @@ class Folder extends AbstractObject
      *
      * @throws AdldapException
      */
-    public function validateRequired()
+    public function validateRequired($only = [])
     {
-        parent::validateRequired();
+        parent::validateRequired($only);
 
         if (!is_array($this->getAttribute('container'))) {
             $message = 'Container attribute must be an array';

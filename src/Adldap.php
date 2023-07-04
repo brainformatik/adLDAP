@@ -33,6 +33,7 @@ class Adldap
     const ADLDAP_DISTRIBUTION_LOCAL_GROUP = 536870913;
     const ADLDAP_FOLDER = 'OU';
     const ADLDAP_CONTAINER = 'CN';
+    const ADLDAP_LDAP_PORT = 389;
 
     /**
      * The Adldap version number.

@@ -67,7 +67,7 @@ class Paginator extends AbstractObject implements IteratorAggregate
      *
      * @return ArrayIterator
      */
-    public function getIterator()
+    public function getIterator(): \Traversable
     {
         // Slice the the entries
         $entries = array_slice($this->getAttributes(), $this->getCurrentOffset(), $this->getPerPage(), true);
